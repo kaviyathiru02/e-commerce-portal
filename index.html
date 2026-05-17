@@ -1,197 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Priya Sharma — Freelance Web Designer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grozz - Grocery Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav {
+            background: #388E3C;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover { text-decoration: underline; }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 { color: #2E7D32; }
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        .item-box {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .item-box img {
+            width: 90px;
+            height: 90px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
+        /* Simple Form */
+        form {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover { background: #45A049; }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header id="site-header" class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1 id="logo"><a href="#hero">Priya Sharma</a></h1>
-        <p class="tag">Freelance Web Designer</p>
-      </div>
 
-      <nav id="main-nav" class="nav">
-        <ul class="nav-list">
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-          <li><a href="#contact" class="nav-link cta">Contact</a></li>
-        </ul>
-        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      </nav>
+<header>Grozz - Grocery Store | Owner: Kaviya</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#about">About Us</a>
+</nav>
+
+<div class="container" id="home">
+    <h2>Welcome to Grozz Grocery Store</h2>
+    <p>Your one-stop solution for fresh groceries and daily essentials.</p>
+</div>
+
+<div class="container" id="products">
+    <h2>Popular Grocery Items</h2>
+
+    <div class="item-box">
+        <img src="https://i.imgur.com/1Q9Z1Zm.jpeg" alt="Milk">
+        <div>Milk - ₹30</div>
     </div>
-  </header>
 
-  <main id="main">
-    <!-- Hero -->
-    <section id="hero" class="hero container">
-      <div class="hero-content">
-        <h2>Designing digital experiences that feel personal.</h2>
-        <p>Hi — I'm Priya, a web designer who builds clean, user-centered websites and brand assets for small businesses and agencies.</p>
-        <a class="button primary" href="#contact">Work with me</a>
-      </div>
-      <div class="hero-image" aria-hidden="true">
-        <!-- decorative illustration placeholder -->
-        <div class="device-mockup">Portfolio Preview</div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="section container">
-      <header class="section-header">
-        <h3>Services</h3>
-        <p>Design, UX, and front-end development to help your brand stand out.</p>
-      </header>
-
-      <div class="services-grid">
-        <article class="service-card">
-          <h4>UI / Visual Design</h4>
-          <p>Create modern interfaces and brand visuals with pixel-perfect detail.</p>
-        </article>
-
-        <article class="service-card">
-          <h4>Responsive Web Design</h4>
-          <p>Mobile-first, accessible, and performance-minded websites.</p>
-        </article>
-
-        <article class="service-card">
-          <h4>Front-end Development</h4>
-          <p>HTML, CSS, and JavaScript to bring designs to life.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Portfolio (CSS Grid) -->
-    <section id="portfolio" class="section container">
-      <header class="section-header">
-        <h3>Portfolio</h3>
-        <p>Selected projects showcasing visual design and front-end work.</p>
-      </header>
-
-      <div class="portfolio-grid">
-        <figure class="project">
-          <img src="https://via.placeholder.com/800x600?text=Project+1" alt="Project 1 screenshot">
-          <figcaption>
-            <h5>Branding & Website</h5>
-            <p>Small business rebrand and responsive site.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="project">
-          <img src="https://via.placeholder.com/800x600?text=Project+2" alt="Project 2 screenshot">
-          <figcaption>
-            <h5>E-commerce UI</h5>
-            <p>Checkout flow & product pages redesign.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="project">
-          <img src="https://via.placeholder.com/800x600?text=Project+3" alt="Project 3 screenshot">
-          <figcaption>
-            <h5>Landing Page</h5>
-            <p>High-conversion marketing landing page.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="project">
-          <img src="https://via.placeholder.com/800x600?text=Project+4" alt="Project 4 screenshot">
-          <figcaption>
-            <h5>Portfolio Microsite</h5>
-            <p>Interactive case study with animations.</p>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Sidebar + Testimonials: uses float on wide screens / stacked on small screens -->
-    <section class="section container two-column">
-      <aside id="sidebar" class="sidebar">
-        <div class="card">
-          <h4>About Priya</h4>
-          <p>Priya designs with empathy and ships with clean code — focused on fast, accessible interfaces.</p>
-          <ul class="skills">
-            <li>UX Design</li>
-            <li>HTML & CSS</li>
-            <li>Responsive Layouts</li>
-            <li>Prototyping</li>
-          </ul>
-        </div>
-      </aside>
-
-      <div id="testimonials" class="testimonials">
-        <h4>Testimonials</h4>
-
-        <blockquote class="testimonial">
-          <p>"Priya transformed our online presence — conversion improved and the site looks fantastic."</p>
-          <cite>— Rohit K., Founder</cite>
-        </blockquote>
-
-        <blockquote class="testimonial">
-          <p>"Professional and responsive. Delivered early and exceeded expectations."</p>
-          <cite>— Meera S., Marketing Lead</cite>
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section id="contact" class="section container contact-section">
-      <header class="section-header">
-        <h3>Contact</h3>
-        <p>Let's build something beautiful together. Send a message and I’ll reply within 48 hours.</p>
-      </header>
-
-      <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required>
-        </div>
-
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required>
-        </div>
-
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project…" required></textarea>
-        </div>
-
-        <div class="form-actions">
-          <button type="submit" class="button primary">Send Message</button>
-          <button type="reset" class="button">Reset</button>
-        </div>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Priya Sharma — Designed with ❤</p>
-      <nav class="footer-nav">
-        <a href="#privacy">Privacy</a>
-        <a href="#terms">Terms</a>
-      </nav>
+    <div class="item-box">
+        <img src="https://i.imgur.com/6YVxPqE.jpeg" alt="Rice">
+        <div>Rice - ₹50/kg</div>
     </div>
-  </footer>
 
-  <script>
-    // small script to set year and toggle mobile nav
-    document.getElementById('year').textContent = new Date().getFullYear();
+    <div class="item-box">
+        <img src="https://i.imgur.com/8mQK5NA.jpeg" alt="Sugar">
+        <div>Sugar - ₹42/kg</div>
+    </div>
 
-    const toggle = document.getElementById('nav-toggle');
-    const nav = document.getElementById('main-nav');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-    });
-  </script>
+    <div class="item-box">
+        <img src="https://i.imgur.com/2Q7wKp7.jpeg" alt="Vegetables">
+        <div>Fresh Vegetables - Daily Stock</div>
+    </div>
+</div>
+
+<div class="container" id="login">
+    <h2>Login</h2>
+    <form onsubmit="return validateLogin()">
+        <input type="text" id="loginUser" placeholder="Enter Username">
+        <input type="password" id="loginPass" placeholder="Enter Password">
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<div class="container" id="register">
+    <h2>User Registration</h2>
+    <form onsubmit="return validateRegister()">
+        <input type="text" id="regName" placeholder="Full Name">
+        <input type="email" id="regEmail" placeholder="Email Address">
+        <input type="password" id="regPass" placeholder="Create Password">
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<div class="container" id="extras">
+    <h2>Other Options</h2>
+    <div class="item-box">Orders List</div>
+    <div class="item-box">Wishlist</div>
+    <div class="item-box">Comments & Reviews</div>
+    <div class="item-box">Customer Care</div>
+    <div class="item-box">Report an Issue</div>
+</div>
+
+<footer>© 2025 Grozz Grocery Store | Designed by Kaviya</footer>
+
+<script>
+    function validateLogin() {
+        let user = document.getElementById("loginUser").value;
+        let pass = document.getElementById("loginPass").value;
+        if (user === "" || pass === "") {
+            alert("All login fields are required.");
+            return false;
+        }
+        alert("Login Successful!");
+        return true;
+    }
+
+    function validateRegister() {
+        let name = document.getElementById("regName").value;
+        let email = document.getElementById("regEmail").value;
+        let pass = document.getElementById("regPass").value;
+        if (name === "" || email === "" || pass === "") {
+            alert("All registration fields are required.");
+            return false;
+        }
+        alert("Registration Successful!");
+        return true;
+    }
+</script>
+
 </body>
 </html>
